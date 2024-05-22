@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">Book Library</a></h1>
+        </div>
+        <div class="header-right">
+            <p>|||</p>
+            <div class="dropdown-content" id="dropdownContent">
+                <a id="sortAZ">A-Z</a>
+                <a id="showPopular">Top Popular</a>
+                <a id="showSaved">Saved Books</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="controls">
+        <input type="text" id="searchBox" placeholder="Search books...">
+    </div>
+    
+    <div class="book-container" id="bookContainer">
+        <!-- Books will be dynamically inserted here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
